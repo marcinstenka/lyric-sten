@@ -1,33 +1,178 @@
-.App {
-  text-align: center;
+:root {
+  --main: rgb(52, 0, 71);
+  --white: rgb(231, 221, 235);
+  --bg: rgb(253, 247, 255);
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+*, *::after, *::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
+  font-family: 'Roboto', sans-serif;
+  background: var(--bg);
+}
+.navbar{
+  width: 100%;
+  height: 60px;
+  background-color: var(--main);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.navbar h3{
+  margin: 0;
+  padding: 0;
+  color: var(--white);
+  font-family: 'Chilanka', cursive;
+  font-size: 23px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.loading{
+  width: 200px;
+  margin: 150px auto;
+  display: block;
+  animation: spin 1s infinite alternate;
+  transition: 1s;
+}
+@keyframes spin{
+  from{
+    transform: rotate(0);
   }
-  to {
+  to{
     transform: rotate(360deg);
   }
+}
+.container{
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  margin:20px auto 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.trackContainer{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+.singleTrack{
+  width: 425px;
+  height: 180px;
+  box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.75);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.singleTrack h4{
+  padding: 15px;
+}
+.singleTrack p{
+  padding-left:15px;
+  line-height: 1.3;
+}
+.singleTrack a{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  color: var(--white);
+  text-decoration: none;
+  text-align: center;
+  background: var(--main)
+}
+.container button{
+  border:none;
+  background: var(--main);
+  padding: 10px;
+  position: absolute;
+  left: 10vw;
+  top:1vh;
+  border-radius: 10px;
+}
+.container button a{
+  text-decoration: none;
+  color: var(--white)
+}
+.lyricsContainer{
+  position: relative;
+  box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.75);
+  width: 100%;
+  height: 100%;
+  margin-top:80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lyricsContainer h4{
+  background: var(--white);
+  padding:20px;
+  text-align: center;
+  width: 100%;
+  height: 60px;
+border-bottom: 2px solid var(--main);
+margin-bottom: 20px;
+}
+.lyricsContainer p{
+  text-align: center;
+  line-height: 1.4;
+}
+
+.lyricsContainer .trackInfo{
+  width: 100%;
+  background:  var(--white);
+  padding:20px;
+  border-top: 2px solid var(--main);
+}
+.lyricsContainer .trackInfo:first-of-type{
+  margin-top:20px;
+}
+.container .by{
+  font-weight: 300;
+}
+.searchContainer{
+  box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.75);
+  position: relative;
+  max-width: 1200px;
+  min-width: 500px;
+  width: 600px;
+  height: 100%;
+  padding:20px 50px;
+  margin:40px auto 40px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.searchContainer p{
+  margin: 20px;
+}
+.searchContainer form{
+  width:100%;
+}
+.searchContainer input{
+  width: 100%;
+  height: 40px;
+  font-size: 23px;
+  padding:15px;
+  border: none;
+  background: var(--white);
+  color: var(--main);
+}
+.searchContainer button{
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background: var(--main);
+  color: var(--white);
+  margin-top: 10px;
+  cursor: pointer;
 }
