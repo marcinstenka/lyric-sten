@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/lyric-sten/static/css/main.8e2222c0.chunk.css",
+    "main.js": "/lyric-sten/static/js/main.cff9c512.chunk.js",
+    "main.js.map": "/lyric-sten/static/js/main.cff9c512.chunk.js.map",
+    "runtime~main.js": "/lyric-sten/static/js/runtime~main.c8dfe4fa.js",
+    "runtime~main.js.map": "/lyric-sten/static/js/runtime~main.c8dfe4fa.js.map",
+    "static/js/2.230df37a.chunk.js": "/lyric-sten/static/js/2.230df37a.chunk.js",
+    "static/js/2.230df37a.chunk.js.map": "/lyric-sten/static/js/2.230df37a.chunk.js.map",
+    "index.html": "/lyric-sten/index.html",
+    "precache-manifest.46611a5b3342399c2692f33493680d36.js": "/lyric-sten/precache-manifest.46611a5b3342399c2692f33493680d36.js",
+    "service-worker.js": "/lyric-sten/service-worker.js",
+    "static/css/main.8e2222c0.chunk.css.map": "/lyric-sten/static/css/main.8e2222c0.chunk.css.map"
+  }
+}
